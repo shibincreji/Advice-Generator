@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 500px;
+    background-color: hsl(217, 19%, 24%);
+    padding: 2.5rem 2.5rem 4rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 2rem -1rem hsla(0, 0%, 0%, 0.3);
+}
+
+.advice__title {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    margin-bottom: 1.5rem;
+}
+
+.advice__text {
+    font-size: 1.5rem;
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: filter 0.5s, opacity 0.5s;
+}
+
+.dice {
+    width: 4rem;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    display: grid;
+    place-content: center;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    transform: translateY(50%);
+    transition: box-shadow 0.2s ease-out;
+}
+
+.dice:hover {
+    box-shadow: 0 0 2rem hsl(150, 100%, 66%);
+}
+
+.blur-out {
+    filter: blur(10px);
+    opacity: 0.5;
+}
+
+.divider {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
